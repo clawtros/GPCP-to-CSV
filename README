@@ -1,0 +1,4 @@
+GPCP to CSV Convertor
+---------------------
+
+Converts GPCP files (like the ones found at http://www1.ncdc.noaa.gov/pub/data/gpcp/gpcp-v2.1/psg/) to CSV files.
