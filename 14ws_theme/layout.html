@@ -1,0 +1,28 @@
+{% extends "basic/layout.html" %}   
+{% set reldelim2 = reldim2 is not defined and ' &nbsp; &nbsp;' or reldelim2 %}
+
+{# adds part to find and use the Ubuntu font, which admittedly is rather clean #}
+{% block extrahead %} 
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css"> 
+{% endblock %}
+
+{# add script file to instrument collapsable sections  and other features #}
+{% set script_files = script_files + ['_static/jquery.cookie.js',
+                                      '_static/toggle_sections.js'] %}
+{% if theme_collapsiblesidebar|tobool %}
+{% set script_files = script_files + ['_static/toggle_sidebar.js'] %}
+{% endif %} 
+
+{# wrap relbars in distinct classes to make themeing easier #}
+{%- block relbar1 %}
+    <div class="relbar-top">
+        {{ super() }}
+    </div>
+{% endblock %}
+
+{%- block relbar2 %}
+    <div class="relbar-bottom">
+        {{ super() }}
+    </div>
+{% endblock %}
+

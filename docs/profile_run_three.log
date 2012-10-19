@@ -1,0 +1,170 @@
+INFO:root:Profile data:
+         5713873 function calls (5713850 primitive calls) in 22.357 CPU seconds
+
+   Ordered by: internal time
+   List reduced from 166 to 160 due to restriction <160>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        2   17.554    8.777   21.956   10.978 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:506(write_csv)
+  3952800    0.701    0.000    0.701    0.000 {method 'write' of 'cStringIO.StringO' objects}
+   259212    0.586    0.000    0.611    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:37(__init__)
+        2    0.543    0.272    1.950    0.975 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:151(__init__)
+        4    0.490    0.123    0.490    0.123 {method 'write' of 'file' objects}
+   129600    0.419    0.000    0.711    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:84(__init__)
+        2    0.391    0.196    3.162    1.581 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:107(generate_map)
+   129600    0.333    0.000    0.652    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:103(__init__)
+   129600    0.240    0.000    0.240    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:89(__str__)
+   129600    0.221    0.000    0.221    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:108(__str__)
+   129600    0.196    0.000    0.657    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:132(__str__)
+   129676    0.150    0.000    0.150    0.000 {method 'split' of 'str' objects}
+    10984    0.122    0.000    0.122    0.000 {_struct.unpack}
+       24    0.089    0.004    0.089    0.004 {built-in method decompress}
+        2    0.054    0.027    0.054    0.027 {method 'getvalue' of 'cStringIO.StringO' objects}
+    11070    0.032    0.000    0.032    0.000 {method 'read' of 'file' objects}
+   129606    0.030    0.000    0.030    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:122(__init__)
+        4    0.030    0.007   22.324    5.581 gpcp_to_csv.py:288(process_file)
+        1    0.028    0.028   22.357   22.357 gpcp_to_csv.py:332(main)
+   270715    0.028    0.000    0.028    0.000 {method 'append' of 'list' objects}
+   259226    0.025    0.000    0.025    0.000 {method 'upper' of 'str' objects}
+        2    0.018    0.009    0.182    0.091 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:57(__init__)
+       26    0.017    0.001    0.017    0.001 {zlib.crc32}
+        4    0.013    0.003    0.150    0.037 gpcp_to_csv.py:254(unzip)
+       24    0.012    0.001    0.029    0.001 C:\Python26\ArcGIS10.0\lib\gzip.py:287(_add_read_data)
+       10    0.010    0.001    0.010    0.001 {print}
+        2    0.008    0.004    0.012    0.006 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:435(get_variables)
+    38870    0.004    0.000    0.004    0.000 {method 'startswith' of 'str' objects}
+       12    0.003    0.000    0.003    0.000 {open}
+        2    0.002    0.001    0.002    0.001 {nt.remove}
+       51    0.001    0.000    0.001    0.000 {min}
+        2    0.001    0.001    0.125    0.062 C:\Python26\ArcGIS10.0\lib\gzip.py:200(read)
+       61    0.001    0.000    0.001    0.000 {method 'strftime' of 'datetime.date' objects}
+      366    0.001    0.000    0.001    0.000 {range}
+       26    0.000    0.000    0.123    0.005 C:\Python26\ArcGIS10.0\lib\gzip.py:237(_read)
+     1865    0.000    0.000    0.000    0.000 {method 'iteritems' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 {method 'readline' of 'file' objects}
+        4    0.000    0.000    0.000    0.000 {method 'close' of 'file' objects}
+      6/4    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:385(_parse)
+       10    0.000    0.000    0.000    0.000 {method 'seek' of 'file' objects}
+     10/3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:38(_compile)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1274(add_argument)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1404(_get_optional_kwargs)
+     13/6    0.000    0.000    0.001    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:146(getwidth)
+      5/3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:307(_parse_sub)
+  205/200    0.000    0.000    0.000    0.000 {len}
+       25    0.000    0.000    0.000    0.000 {built-in method match}
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1748(_parse_known_args)
+        3    0.000    0.000    0.002    0.001 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1193(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1713(parse_known_args)
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:153(_read_gzip_header)
+        1    0.000    0.000    0.002    0.002 gpcp_to_csv.py:58(get_args)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1324(_add_action)
+       28    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:188(__next)
+        8    0.000    0.000    0.002    0.000 C:\Python26\ArcGIS10.0\lib\re.py:229(_compile)
+        2    0.000    0.000    0.182    0.091 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:431(__init__)
+       36    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:136(__getitem__)
+        4    0.000    0.000    0.001    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:44(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gettext.py:130(_expand_lang)
+        8    0.000    0.000    0.000    0.000 {method 'tell' of 'file' objects}
+       34    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1245(register)
+        4    0.000    0.000    0.000    0.000 {built-in method now}
+       42    0.000    0.000    0.000    0.000 {hasattr}
+        3    0.000    0.000    0.002    0.001 C:\Python26\ArcGIS10.0\lib\sre_compile.py:501(compile)
+        1    0.000    0.000    0.002    0.002 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1559(__init__)
+        5    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1795(take_action)
+        3    0.000    0.000    0.001    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:367(_compile_info)
+        4    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:323(__del__)
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:293(_read_eof)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:788(__init__)
+       31    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1249(_registry_get)
+       11    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2244(_get_value)
+        2    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gettext.py:421(find)
+        4    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:23(read32)
+       54    0.000    0.000    0.000    0.000 {isinstance}
+        5    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1816(consume_optional)
+        5    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2195(_get_values)
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:308(close)
+        4    0.000    0.000    0.001    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:26(open)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:669(parse)
+        1    0.000    0.000    0.000    0.000 {sorted}
+       31    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:120(_callable)
+       18    0.000    0.000    0.000    0.000 {method 'index' of 'str' objects}
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1511(_add_action)
+        2    0.000    0.000    0.000    0.000 {zlib.decompressobj}
+        1    0.000    0.000    0.000    0.000 gpcp_to_csv.py:164(check_args)
+        5    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2015(_match_argument)
+       26    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        7    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:830(__init__)
+       72    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+       22    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:207(get)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:184(_compile_charset)
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1490(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\locale.py:316(normalize)
+       12    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\os.py:444(get)
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gzip.py:149(_init_read)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1439(_pop_action_class)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gettext.py:527(dgettext)
+        5    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2151(_get_nargs_pattern)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:213(_optimize_charset)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1452(_check_conflict)
+       16    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:144(append)
+       10    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1686(_add_action)
+        3    0.000    0.000    0.002    0.001 C:\Python26\ArcGIS10.0\lib\sre_compile.py:486(_code)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gettext.py:461(translation)
+       20    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:132(__len__)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\gettext.py:565(gettext)
+        5    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\re.py:134(match)
+        4    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        9    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2050(_parse_optional)
+        3    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1443(_get_handler)
+       14    0.000    0.000    0.000    0.000 {setattr}
+        5    0.000    0.000    0.000    0.000 {built-in method group}
+        4    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:263(_escape)
+       40    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+       15    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:201(match)
+        6    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:480(isstring)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1893(consume_positionals)
+        9    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_compile.py:360(_simple)
+        1    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\ntpath.py:164(split)
+       10    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:96(__init__)
+        1    0.000    0.000   22.357   22.357 <string>:1(<module>)
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1314(add_argument_group)
+        2    0.000    0.000    0.000    0.000 {cStringIO.StringIO}
+        3    0.000    0.000    0.000    0.000 {_sre.compile}
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\mapping.py:127(delta_to)
+        5    0.000    0.000    0.000    0.000 {max}
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:89(closegroup)
+       20    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:888(__init__)
+        3    0.000    0.000    0.002    0.001 C:\Python26\ArcGIS10.0\lib\re.py:188(compile)
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\gpcp_parsers.py:103(has_data)
+        4    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:859(__call__)
+        2    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:865(__init__)
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:184(__init__)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1175(__init__)
+        6    0.000    0.000    0.000    0.000 {method '__enter__' of 'file' objects}
+       10    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:73(__init__)
+        4    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:134(__delitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1006(__init__)
+        4    0.000    0.000    0.000    0.000 {method 'zfill' of 'str' objects}
+        4    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2269(_check_value)
+        8    0.000    0.000    0.000    0.000 {ord}
+        3    0.000    0.000    0.000    0.000 {getattr}
+        4    0.000    0.000    0.000    0.000 {abs}
+        3    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1698(_get_positional_actions)
+       11    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1605(identity)
+        1    0.000    0.000    0.000    0.000 {iter}
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:1706(parse_args)
+        2    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:78(opengroup)
+        3    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 {zip}
+        3    0.000    0.000    0.000    0.000 C:\Python26\ArcGIS10.0\lib\sre_parse.py:140(__setitem__)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:2034(_match_arguments_partial)
+        1    0.000    0.000    0.000    0.000 C:\Users\schiefej\WorkLinks\Coding Projects\Eclipse\GPCP\src\argparse.py:882(__call__)
+        9    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+
+
+

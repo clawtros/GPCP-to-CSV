@@ -1,0 +1,1 @@
+.\make clean & cls & .\make html
