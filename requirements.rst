@@ -55,9 +55,9 @@ As an aside, a slight tweaking to the appropriate section of the code (such as
 adding a header line and breaking the files into months) allows the CSV to be
 used in ArcGIS for visualization.  This insight and the fact a new requirement
 was placed after the revision was complete (this requirement was to be able
-to read and create a CSV from the new GPCP format) prompted the re-write.
+to read and create a CSV from the new GPCP 2 format) prompted the re-write.
 This re-write created a parent GpcpParser class with the necessary functions
-and two function required to be implemented by all desendents.  Essentially,
+and two function required to be implemented by all decendants.  Essentially,
 this means if a new format is needed for either input or output a programmer
-can inheriet from the GpcpParser (or the paraser of choice) and only implement 
+can inherent from the GpcpParser (or the parser of choice) and only implement 
 the two functions required, write_csv and get_variables. 

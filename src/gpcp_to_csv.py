@@ -25,7 +25,6 @@ Notes/Lessons Learned
 --------
 
 """
-
 #------------------------------------------------------------------------------
 #     Imports
 #------------------------------------------------------------------------------
@@ -150,11 +149,11 @@ def get_args():
                         '--format',
                         default='2',
                         help="The output format determines which parser " + \
-                             "to use. 0 is for the original parser and " + \
-                             "file format. 1 is for single line output " + \
-                             "using the first file format.  2 is the " + \
-                             "default and is for single line output " + \
-                             "from the newest file format.")
+                             "to use. 0 is for the version one format and " + \
+                             "map CSV output. 1 is for single line " + \
+                             "CSV output with the version one file format." + \
+                             " 2 is the default and is for single line " + \
+                             "CSV output with the version 2 file format.")
 
     return parser.parse_args()
 

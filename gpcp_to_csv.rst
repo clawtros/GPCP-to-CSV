@@ -4,7 +4,7 @@
 Overview
 --------
 The module to extract the data from a known binary format and write it out
-in a very specific CSV format.
+in a specific CSV format.
 
 Description
 -----------

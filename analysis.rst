@@ -63,10 +63,10 @@ and provides all the options such as below::
                             for applicable examples but using month numbers.
       -f FORMAT, --format FORMAT
                             The output format determines which parser to use. 0 is
-                            for the original parser and file format. 1 is for
-                            single line output using the first file format. 2 is
-                            the default and is for single line output from the
-                            newest file format.
+                            for the version one format and map CSV output. 1 is
+                            for single line CSV output with the version one file
+                            format. 2 is the default and is for single line CSV
+                            output with the version 2 file format.
 
 Users of Unix/Linux environments will find the above familiar and
 easy to follow.
@@ -86,7 +86,7 @@ run was to use available memory and only write to the file once.  This is
 where the cStringIO.StringIO() function is used and was admittedly only a 
 marginal optimization at best but it was perceptible and was left in the code.
 If the data set increase in size significantly this may become problematic 
-depending on the memory of the maching.  For now it is a good trade off and 
+depending on the memory of the machine.  For now it is a good trade off and 
 readability of the code did not suffer.
 
 The place for formatting the code is in the GpcpParser.write_csv function.
