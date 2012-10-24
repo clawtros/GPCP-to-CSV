@@ -75,7 +75,13 @@ def get_args():
                       years='(1987,2011)')
 
     """
-    parser = argparse.ArgumentParser()
+    gpcp_url = "http://precip.gsfc.nasa.gov/"
+    description = "Please see " + gpcp_url + " for a full description of " + \
+                  "the data set."
+    epilog = "Special thanks to clawtros/Adam Benzan and Carbon Chick for " + \
+             "their initial program that solved the hard problem."
+    parser = argparse.ArgumentParser(description=description,
+                                     epilog=epilog)
 
     parser.add_argument('-z',
                         '--gzip',
@@ -87,8 +93,8 @@ def get_args():
                         '--single_file',
                         action='store_true',
                         help="Set this flag if running the program for " + \
-                             "only a single (one) file.  Then provide the " + \
-                             "input_file.")
+                             "only a single (one) file.  Specify the file " + \
+                             "using the -i option.")
 
     parser.add_argument('-i',
                         '--input_file',
@@ -96,7 +102,8 @@ def get_args():
                         help="The full path of the input file, i.e.: " + \
                              "C:/Users/schiefej/Desktop/gpcp_v2.2psg.1987" + \
                              " if no year(s) is(are) provided this is " + \
-                             "required.")
+                             "required.  If this switch is used, -s must " + \
+                             "also be set.")
 
     parser.add_argument('-o',
                         '--output_file',
@@ -145,15 +152,19 @@ def get_args():
                              "the string; see the year argument for " + \
                              "applicable examples but using month numbers.")
 
+    format_help = ("This switch determines which parser to use. " +
+                   "0 decodes MONTHLY GPCP (v2.2) binary file into CSV " +
+                   "output. Tags the data by month and pre-pends a list of " +
+                   "grid box lat/lons in the same order as the precip data " +
+                   "itself.  Format originally designed by Adler, et al." +
+                   "1 decodes MONTHLY GPCP (v2.2) binary data into CSV with " +
+                   "a date/lat/lon value for each precip value in the file. " +
+                   "One line per value.  2 decodes DAILY GPCP (v1.2) binary " +
+                   "file into same csv format as 1 above.")
     parser.add_argument('-f',
                         '--format',
                         default='2',
-                        help="The output format determines which parser " + \
-                             "to use. 0 is for the version one format and " + \
-                             "map CSV output. 1 is for single line " + \
-                             "CSV output with the version one file format." + \
-                             " 2 is the default and is for single line " + \
-                             "CSV output with the version 2 file format.")
+                        help=format_help)
 
     return parser.parse_args()
 

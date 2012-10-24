@@ -27,46 +27,58 @@ and provides all the options such as below::
                       [-p INPUT_PREFIX] [-op OUTPUT_PREFIX] [-y YEARS]
                       [-m MONTHS] [-f FORMAT]
 
-    optional arguments:
-      -h, --help            show this help message and exit
-      -z, --gzip            Set this flag if the input files are zipped using gzip
-                            and end with .gz.
-      -s, --single_file     Set this flag if running the program for only a single
-                            (one) file. Then provide the input_file.
-      -i INPUT_FILE, --input_file INPUT_FILE
-                            The full path of the input file, i.e.:
-                            C:/Users/schiefej/Desktop/gpcp_v2.2psg.1987 if no
-                            year(s) is(are) provided this is required.
-      -o OUTPUT_FILE, --output_file OUTPUT_FILE
-                            The full path of the input file, i.e.:
-                            C:/Users/schiefej/Desktop/out_1987.csv
-      -p INPUT_PREFIX, --input_prefix INPUT_PREFIX
-                            The path to the input file(s) and the appropriate
-                            prefix such as: './gpcp_v2.2_psg.' or
-                            'C:/Users/schiefej/binary_files/gpcp_file_'The default
-                            is the current directory plus the prefix for the new
-                            format files: './gpcp_1dd_v1.2_p1d.'
-      -op OUTPUT_PREFIX, --output_prefix OUTPUT_PREFIX
-                            The path to the output file(s) and the appropriate
-                            prefix such as: './gpcp_out_' or
-                            'C:/Users/schiefej/binary_files/gpcp_out_'
-      -y YEARS, --years YEARS
-                            Years of the requested data, i.e. 2012 or 1987,2011.
-                            The MUST be no spaces in the string, ie. 1999,2000 is
-                            okay but 1999, 2000 is not.This is a optional value
-                            but if it is provided, prefixes must be provided. If
-                            it is provided, an input file must be provided.
-      -m MONTHS, --months MONTHS
-                            Months of the requested data, i.e. 10 or
-                            1,2,3,4,5,6,7,8,9,10,11,12 for an entire year. There
-                            MUST be no spaces in the string; see the year argument
-                            for applicable examples but using month numbers.
-      -f FORMAT, --format FORMAT
-                            The output format determines which parser to use. 0 is
-                            for the version one format and map CSV output. 1 is
-                            for single line CSV output with the version one file
-                            format. 2 is the default and is for single line CSV
-                            output with the version 2 file format.
+	Please see http://precip.gsfc.nasa.gov/ for a full description of the data
+	set.
+
+	optional arguments:
+	  -h, --help            show this help message and exit
+	  -z, --gzip            Set this flag if the input files are zipped using gzip
+							and end with .gz.
+	  -s, --single_file     Set this flag if running the program for only a single
+							(one) file. Specify the file using the -i option.
+	  -i INPUT_FILE, --input_file INPUT_FILE
+							The full path of the input file, i.e.:
+							C:/Users/schiefej/Desktop/gpcp_v2.2psg.1987 if no
+							year(s) is(are) provided this is required. If this
+							switch is used, -s must also be set.
+	  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+							The full path of the input file, i.e.:
+							C:/Users/schiefej/Desktop/out_1987.csv
+	  -p INPUT_PREFIX, --input_prefix INPUT_PREFIX
+							The path to the input file(s) and the appropriate
+							prefix such as: './gpcp_v2.2_psg.' or
+							'C:/Users/schiefej/binary_files/gpcp_file_'The default
+							is the current directory plus the prefix for the new
+							format files: './gpcp_1dd_v1.2_p1d.'
+	  -op OUTPUT_PREFIX, --output_prefix OUTPUT_PREFIX
+							The path to the output file(s) and the appropriate
+							prefix such as: './gpcp_out_' or
+							'C:/Users/schiefej/binary_files/gpcp_out_'
+	  -y YEARS, --years YEARS
+							Years of the requested data, i.e. 2012 or 1987,2011.
+							The MUST be no spaces in the string, ie. 1999,2000 is
+							okay but 1999, 2000 is not.This is a optional value
+							but if it is provided, prefixes must be provided. If
+							it is provided, an input file must be provided.
+	  -m MONTHS, --months MONTHS
+							Months of the requested data, i.e. 10 or
+							1,2,3,4,5,6,7,8,9,10,11,12 for an entire year. There
+							MUST be no spaces in the string; see the year argument
+							for applicable examples but using month numbers.
+	  -f FORMAT, --format FORMAT
+							This switch determines which parser to use. 0 decodes
+							MONTHLY GPCP (v2.2) binary file into CSV output. Tags
+							the data by month and pre-pends a list of grid box
+							lat/lons in the same order as the precip data itself.
+							Format originally designed by Adler, et al.1 decodes
+							MONTHLY GPCP (v2.2) binary data into CSV with a
+							date/lat/lon value for each precip value in the file.
+							One line per value. 2 decodes DAILY GPCP (v1.2) binary
+							file into same csv format as 1 above.
+
+	Special thanks to clawtros/Adam Benzan and Carbon Chick for their initial
+	program that solved the hard problem.
+
 
 Users of Unix/Linux environments will find the above familiar and
 easy to follow.
